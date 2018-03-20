@@ -52,11 +52,12 @@ body {
 
 .txt-logo {
   color: #7CB3B3;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-size: 50px;
   position: relative;
-  top: -10px;
-  left: -20px;
+  top: -20px;
+  left: 0px;
+  letter-spacing: 4px;
 } 
 
 .content {
@@ -69,6 +70,10 @@ body {
 }
 .txt-logo {
   visibility: hidden;
+}
+.logo {
+  top: 10px;
+  left: 10px;
 }
 }
 
