@@ -6,14 +6,14 @@ body {
 }
 
 p {
-  font-family: verdana;
-  font-size: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
 }
 
 .mheader {
   height: 30px;
   width: 100%;
-  background-color: #DDF0F0;
+  background-color: rgb(4, 27, 27);
   text-align: right;
   z-index: 1;
   position: fixed;
@@ -71,12 +71,10 @@ hr {
 .content {
   height: 1000px;
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px 300px;
-  grid-gap: 1em;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 3em;
   justify-content: center;
-  position: relative;
-  left: 50px;
 }
 
 .content>div {
@@ -85,8 +83,8 @@ hr {
 }
 
 .icon{
-  height: 180px;
-  width: 180px;
+  height: 80px;
+  width: 80px;
 }
 
 @media (max-width: 850px) {
@@ -101,9 +99,11 @@ hr {
   left: 10px;
 }
 .content {
-  grid-template-columns: 1fr;
+  grid-template-columns: 35%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  left: 35%;
+  position: relative;
+  grid-gap: 0;
+  /* left: 270px; */
 }
 .content > div {
   width: 200px;
