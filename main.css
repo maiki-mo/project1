@@ -5,6 +5,11 @@ body {
   background-image: url("images/dust_scratches.png");
 }
 
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+
 .mheader {
   height: 30px;
   width: 100%;
@@ -14,6 +19,9 @@ body {
   position: fixed;
 }
 
+hr {
+  margin: 0 50px;
+}
 .min-header {
   text-align: right;
   margin-right: 10px;
@@ -62,9 +70,26 @@ body {
 
 .content {
   height: 1000px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  grid-gap: 1em;
+  justify-content: center;
+  position: relative;
+  left: 50px;
 }
 
-@media (max-width: 750px) {
+.content>div {
+  justify-content: center;
+  text-align: center;
+}
+
+.icon{
+  height: 180px;
+  width: 180px;
+}
+
+@media (max-width: 850px) {
 .mheader {
   visibility: hidden;
 }
@@ -72,8 +97,16 @@ body {
   visibility: hidden;
 }
 .logo {
-  top: 10px;
+  top: 60px;
   left: 10px;
+}
+.content {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  left: 35%;
+}
+.content > div {
+  width: 200px;
 }
 }
 
