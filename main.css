@@ -68,6 +68,17 @@ hr {
   letter-spacing: 4px;
 } 
 
+.txt-logo-media {
+  color: #7CB3B3;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
+  visibility: hidden;
+  position: relative;
+  letter-spacing: 4px;
+  left: -33px;
+  top: -130px;
+} 
+
 .content {
   height: 1000px;
   display: grid;
@@ -87,6 +98,11 @@ hr {
   width: 80px;
 }
 
+.footer{
+  justify-content: center;
+  text-align: center;
+}
+
 @media (max-width: 850px) {
 .mheader {
   visibility: hidden;
@@ -94,19 +110,26 @@ hr {
 .txt-logo {
   visibility: hidden;
 }
+.txt-logo-media {
+  visibility: visible;
+  top: -120px;
+}
 .logo {
-  top: 60px;
+  top: 30px;
   left: 10px;
 }
 .content {
   grid-template-columns: 35%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   position: relative;
-  grid-gap: 0;
-  /* left: 270px; */
+  grid-gap: 3em;
 }
 .content > div {
-  width: 200px;
+  width: 300px;
+}
+.icon {
+  height: 300px;
+  width: 300px;
 }
 }
 
