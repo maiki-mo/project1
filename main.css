@@ -27,6 +27,7 @@ p {
 hr {
   margin: 0 50px;
 }
+
 .min-header {
   text-align: right;
   margin-right: 10px;
@@ -52,19 +53,27 @@ hr {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  left: 20px;
+  left: -50px;
+  animation: assemble1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
 }
 
-.dot2 {
-  height: 75px;
-  width: 75px;
+.square1 {
+  height: 70px;
+  width: 70px;
   background-color: #7CB3B3;
   display: inline-block;
   position: relative;
   left: -60px;
+  animation: assemble2;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
 }
 
-.dot3 {
+.square2 {
   height: 100px;
   width: 100px;
   background-color: white;
@@ -72,6 +81,10 @@ hr {
   display: inline-block;
   position: relative;
   left: -115px;
+  animation: assemble3;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
 }
 
 .txt-logo {
@@ -79,7 +92,7 @@ hr {
   font-family: 'Orbitron', sans-serif;
   font-size: 50px;
   position: relative;
-  top: -10px;
+  top: -20px;
   left: 0px;
   letter-spacing: 4px;
 } 
@@ -93,13 +106,23 @@ hr {
   letter-spacing: 4px;
   left: -33px;
   top: -130px;
-} 
+}
+
+.picTabContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.pic>img {
+  width: 600px;
+}
 
 .content {
   height: 1000px;
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-columns: repeat(6, 200px);
   grid-gap: 3em;
   justify-content: center;
 }
@@ -107,6 +130,18 @@ hr {
 .content>div {
   justify-content: center;
   text-align: center;
+  border: 4px black solid;
+  padding-top: 30px;
+  border-radius: 25%;
+  height: 160px;
+}
+
+.content>div:hover {
+  background-color: #A0BFC0;
+}
+
+.content:hover {
+  color: white;
 }
 
 .icon{
@@ -138,14 +173,42 @@ hr {
   grid-template-columns: 35%;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   position: relative;
-  grid-gap: 3em;
+  grid-gap: 300px;
+  top: -500px;
 }
-.content > div {
+.content>div {
+  border: 0;
   width: 300px;
+}
+
+.content>div:hover {
+  background-color: transparent;
 }
 .icon {
   height: 300px;
   width: 300px;
 }
+hr {
+  visibility: hidden;
+}
+.picTabContainer {
+  visibility: hidden;
+}
 }
 
+@keyframes assemble1 {
+  0% {left: -50px; top: 0px;}
+  90% {left: 70px; top: 20px;}
+  100% {left: 85px; top: 0px;}
+}
+
+@keyframes assemble2 {
+  0% {left: -60px; top: 0px;}
+  50% {left: 50px; top: -10px}
+  100% {left: -32px; top: -42px}
+}
+
+@keyframes assemble3 {
+  0% {left: -115px; top: 0px; transform: rotate(0deg);}
+  100% {left: -122px; top: -30px; transform: rotate(225deg);}
+}
