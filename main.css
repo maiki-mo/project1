@@ -245,8 +245,12 @@ hr {
 /* footer */
 
 #footCont{
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
   display: flex;
-  height: 100px;
+  height: 300px;
   justify-content: center;
   text-align: center;
   background-color: #7CB3B3;
