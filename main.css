@@ -157,7 +157,7 @@ hr {
 .content>div {
   justify-content: center;
   text-align: center;
-  border: 4px black solid;
+  border: 2px white solid;
   padding-top: 30px;
   border-radius: 25%;
   width: 150px;
@@ -172,7 +172,7 @@ hr {
 }
 
 .content>div:hover {
-  background-color: #7CB3B3;
+  background-color: rgba(190,207,208,0.5);
 }
 
 .content:hover {
@@ -196,17 +196,6 @@ hr {
 
 /* modals */
 
-.button{
-  background-color: coral;
-  padding: 1em 2em;
-  color: white;
-  border: 0;
-}
-
-.button:hover {
-  background-color: darkgrey;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -220,11 +209,11 @@ hr {
 }
 
 .modal-content {
-  background-color: lightgrey;
+  background-image: url("images/dust_scratches.png");
   margin: 20% auto;
   padding: 20px;
   width: 70%;
-  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.3);
   animation-name: modalopen;
   animation-duration: 1s;
 }
@@ -235,12 +224,7 @@ hr {
   color: black;
   float: right;
   font-size: 30px;
-}
-
-.closeBtn:hover, .closeBtn:focus {
-  color: black;
   cursor: pointer;
-  text-decoration: none;
 }
 /* footer */
 
