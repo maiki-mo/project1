@@ -13,7 +13,7 @@
         <div class="min-header">
           <a href="index.html">home</a>
           <span style="margin-left: 5px; margin-right: 5px"> | </span>
-          <a href="#footer">contact us</a>
+          <a href="#footer">contact</a>
           <span style="margin-left: 5px; margin-right: 5px"> | </span>
           <a href="#social">social media</a>
         </div>
@@ -34,31 +34,27 @@
         <br />
         <!--link to content-->
         <div class="content">
-            <div class="box1">
+            <div class="box" id="uniqBox">
+            <p id="prompt">Please Choose a Paper Product to Learn More</p>
+            </div>
+            <div class="box" id="box1">
               <img class="icon" src="images/pencil_vector.png">
               <p>Drawing Paper</p>
             </div>
-            <div class="box2">
-              <img class="icon" src="images/pen_vector.svg">
-              <p>Parchment Paper</p>
-            </div>
-            <div class="box3">
-              <img class="icon" src="images/brush_vector.svg">
-              <p>Watercolor Paper</p>
-            </div>
-            <div class="box4">
+            <div class="box" id="box2">
               <img class="icon" src="images/desktop_vector.png">
               <p>Computer Paper</p>
             </div>
-            <div class="box5">
-              <img class="icon" src="images/copy_vector.png">
-              <p>Copy Paper</p>
-            </div>
-            <div class="box6">
+            <div class="box" id="box3">
               <img class="icon" src="images/fire_vector.png">
               <p>Paper to Burn</p>
             </div>
           </div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
             <hr>
             <br />
             <br />
@@ -80,8 +76,22 @@
       <br />
       <br />
         <!--viewable content-->
+
+        <!-- <button id="modalBtn" class="button">click here</button> -->
+
+        <div id="simpleModal" class="modal">
+          <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <p>Hello Modal</p>
+          </div>
+        </div>
+        
+        
+        
+          <!--footer shit-->
       <div id="footCont">
       <p class="footer">hi</p>
       </div>
+      <script src="main.js"></script>
     </body>
 </html>

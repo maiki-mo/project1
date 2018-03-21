@@ -10,7 +10,7 @@ body {
 p {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
-  color: #3A8D8A;
+  color: black;
 }
 
 /* mini header */
@@ -25,6 +25,10 @@ p {
   text-align: right;
   z-index: 1;
   position: fixed;
+}
+
+a {
+  text-decoration: none;
 }
 
 hr {
@@ -43,6 +47,16 @@ hr {
 }
 
 /* logo */
+#contPop {
+  z-index: 1;
+  background-color: blue;
+  width: 300px;
+  height: 100px;
+  display: 
+  position: relative;
+  left: -800px;
+}
+
 .logo {
   height: 300px;
   position: relative;
@@ -131,11 +145,13 @@ hr {
 .content {
   height: 200px;
   display: grid;
-  grid-template-columns: repeat(6, 200px);
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 100px 500px;
   grid-gap: 1em;
   justify-content: center;
   position: relative;
   left: 20px;
+  margin-bottom: 10px;
 }
 
 .content>div {
@@ -146,10 +162,17 @@ hr {
   border-radius: 25%;
   width: 150px;
   height: 120px;
+  cursor: pointer;
+}
+
+#prompt {
+  position: relative;
+  bottom: 24px;
+  font-size: 22px;
 }
 
 .content>div:hover {
-  background-color: #A0BFC0;
+  background-color: #7CB3B3;
 }
 
 .content:hover {
@@ -161,6 +184,64 @@ hr {
   width: 50px;
 }
 
+#uniqBox {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 600px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  left: -7px;
+}
+
+/* modals */
+
+.button{
+  background-color: coral;
+  padding: 1em 2em;
+  color: white;
+  border: 0;
+}
+
+.button:hover {
+  background-color: darkgrey;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.modal-content {
+  background-color: lightgrey;
+  margin: 20% auto;
+  padding: 20px;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+.closeBtn {
+  position: relative;
+  top: 8px;
+  color: black;
+  float: right;
+  font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
 /* footer */
 
 #footCont{
@@ -182,25 +263,30 @@ MEDIA Q
 .mheader {
   visibility: hidden;
 }
+
 .txt-logo {
   visibility: hidden;
 }
+
 .txt-logo-media {
   visibility: visible;
   top: -170px;
-  left: 10px;
+  left: 0px;
 }
+
 .logo {
   top: 30px;
-  left: 40px;
+  left: 0px;
 }
+
 .content {
-  grid-template-columns: 35%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 48%;
+  grid-template-rows: 1fr 1fr 1fr;
   position: relative;
-  grid-gap: 300px;
+  grid-gap: 400px;
   top: 100px;
 }
+
 .content>div {
   border: 0;
   width: 300px;
@@ -209,15 +295,30 @@ MEDIA Q
 .content>div:hover {
   background-color: transparent;
 }
+
 .icon {
   height: 300px;
   width: 300px;
 }
+
 hr {
   visibility: hidden;
 }
+
 .picTabContainer {
   visibility: hidden;
+}
+
+#footCont {
+  display: none;
+}
+
+#uniqBox {
+  display: none;
+}
+
+p {
+  font-size: 50px;
 }
 }
 /*
@@ -242,4 +343,9 @@ ANIMATION
 @keyframes assemble3 {
   0% {left: -75px; top: 0px; transform: rotate(0deg);}
   100% {left: -122px; top: -30px; transform: rotate(225deg);}
+}
+
+@keyframes modalopen {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
