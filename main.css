@@ -1,8 +1,10 @@
+/* //big items */
 body {
   width: 100%;
   margin: 0;
   padding: 0;
   background-image: url("images/dust_scratches.png");
+  overflow-x: hidden;
 }
 
 p {
@@ -11,6 +13,7 @@ p {
   color: #3A8D8A;
 }
 
+/* mini header */
 .spacer>img {
   width: 600px;
 }
@@ -39,6 +42,7 @@ hr {
   margin: 0 auto;
 }
 
+/* logo */
 .logo {
   height: 300px;
   position: relative;
@@ -70,7 +74,7 @@ hr {
   animation: assemble2;
   animation-duration: 1s;
   animation-fill-mode: forwards;
-  animation-delay: 3s;
+  animation-delay: 3.5s;
 }
 
 .square2 {
@@ -80,11 +84,12 @@ hr {
   z-index: -1;
   display: inline-block;
   position: relative;
-  left: -115px;
+  left: -75px;
   animation: assemble3;
-  animation-duration: .5s;
+  animation-timing-function: ease-out;
+  animation-duration: 1.6s;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 4.5s;
 }
 
 .txt-logo {
@@ -108,6 +113,8 @@ hr {
   top: -130px;
 }
 
+/* about me picture and table */
+
 .picTabContainer {
   display: flex;
   flex-direction: row;
@@ -119,12 +126,16 @@ hr {
   width: 600px;
 }
 
+/* icons with events*/
+
 .content {
-  height: 1000px;
+  height: 200px;
   display: grid;
   grid-template-columns: repeat(6, 200px);
-  grid-gap: 3em;
+  grid-gap: 1em;
   justify-content: center;
+  position: relative;
+  left: 20px;
 }
 
 .content>div {
@@ -133,7 +144,8 @@ hr {
   border: 4px black solid;
   padding-top: 30px;
   border-radius: 25%;
-  height: 160px;
+  width: 150px;
+  height: 120px;
 }
 
 .content>div:hover {
@@ -145,15 +157,27 @@ hr {
 }
 
 .icon{
-  height: 80px;
-  width: 80px;
+  height: 50px;
+  width: 50px;
 }
 
-.footer{
+/* footer */
+
+#footCont{
+  display: flex;
+  height: 100px;
   justify-content: center;
   text-align: center;
+  background-color: #7CB3B3;
 }
 
+/*
+
+
+MEDIA Q
+
+
+*/
 @media (max-width: 850px) {
 .mheader {
   visibility: hidden;
@@ -164,6 +188,7 @@ hr {
 .txt-logo-media {
   visibility: visible;
   top: -170px;
+  left: 10px;
 }
 .logo {
   top: 30px;
@@ -174,7 +199,7 @@ hr {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   position: relative;
   grid-gap: 300px;
-  top: -500px;
+  top: 100px;
 }
 .content>div {
   border: 0;
@@ -195,7 +220,13 @@ hr {
   visibility: hidden;
 }
 }
+/*
 
+
+ANIMATION
+
+
+*/
 @keyframes assemble1 {
   0% {left: -50px; top: 0px;}
   90% {left: 70px; top: 20px;}
@@ -203,12 +234,12 @@ hr {
 }
 
 @keyframes assemble2 {
-  0% {left: -60px; top: 0px;}
-  50% {left: 50px; top: -10px}
-  100% {left: -32px; top: -42px}
+  0% {left: -60px; top: 0px; transform: rotate(0deg);}
+  50% {left: 50px; top: -10px; transform: rotate(90deg);}
+  100% {left: -32px; top: -42px; transform: rotate(180deg);}
 }
 
 @keyframes assemble3 {
-  0% {left: -115px; top: 0px; transform: rotate(0deg);}
+  0% {left: -75px; top: 0px; transform: rotate(0deg);}
   100% {left: -122px; top: -30px; transform: rotate(225deg);}
 }
