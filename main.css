@@ -8,12 +8,17 @@ body {
 p {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
+  color: #3A8D8A;
+}
+
+.spacer>img {
+  width: 600px;
 }
 
 .mheader {
   height: 30px;
   width: 100%;
-  background-color: rgb(4, 27, 27);
+  background-color: #7CB3B3;
   text-align: right;
   z-index: 1;
   position: fixed;
@@ -47,6 +52,7 @@ hr {
   display: inline-block;
   position: relative;
   overflow: hidden;
+  left: 20px;
 }
 
 .dot2 {
@@ -55,7 +61,17 @@ hr {
   background-color: #7CB3B3;
   display: inline-block;
   position: relative;
-  left: -80px;
+  left: -60px;
+}
+
+.dot3 {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  z-index: -1;
+  display: inline-block;
+  position: relative;
+  left: -115px;
 }
 
 .txt-logo {
@@ -63,7 +79,7 @@ hr {
   font-family: 'Orbitron', sans-serif;
   font-size: 50px;
   position: relative;
-  top: -20px;
+  top: -10px;
   left: 0px;
   letter-spacing: 4px;
 } 
@@ -112,11 +128,11 @@ hr {
 }
 .txt-logo-media {
   visibility: visible;
-  top: -120px;
+  top: -170px;
 }
 .logo {
   top: 30px;
-  left: 10px;
+  left: 40px;
 }
 .content {
   grid-template-columns: 35%;
