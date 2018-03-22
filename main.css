@@ -138,6 +138,7 @@ hr {
 
 .pic>img {
   width: 600px;
+  height: 400px;
   margin: 10px;
 }
 
@@ -236,7 +237,7 @@ hr {
 
 .modal-content {
   background-image: url("images/dust_scratches.png");
-  margin: 20% auto;
+  margin: 10% auto;
   width: 70%;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.3);
   animation-name: modalopen;
@@ -308,7 +309,7 @@ hr {
 
 .modal-content2 {
   background-image: url("images/dust_scratches.png");
-  margin: 20% auto;
+  margin: 10% auto;
   width: 70%;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.3);
   animation-name: modalopen;
@@ -380,7 +381,7 @@ hr {
 
 .modal-content3 {
   background-image: url("images/dust_scratches.png");
-  margin: 20% auto;
+  margin: 10% auto;
   width: 70%;
   box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.3);
   animation-name: modalopen;
@@ -497,7 +498,14 @@ p {
 }
 
 .modalBody>p, .modalBody2>p, .modalBody3>p {
-  font-size: 14px;
+  font-size: 26px;
+}
+}
+
+@media (min-width: 1600px) {
+.pic>img {
+  width: 800px;
+  height: 510px;
 }
 }
 /*
