@@ -497,8 +497,13 @@ p {
   font-size: 50px;
 }
 
-.modalBody>p, .modalBody2>p, .modalBody3>p {
-  font-size: 26px;
+.modalBody>p,
+.modalBody2>p,
+.modalBody3>p,
+.modalFooter>p,
+.modalFooter2>p,
+.modalFooter3>p{
+  font-size: 24px;
 }
 }
 
