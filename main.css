@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-p {
+p, ul{
   font-family: 'IBM Plex Mono', monospace;
   font-size: 16px;
   color: black;
@@ -433,26 +433,49 @@ hr {
 
 #footCont{
   display: flex;
+  flex-direction: row;
   bottom: 0;
   right: 0;
   left: 0;
-  display: flex;
   height: 300px;
-  justify-content: center;
   text-align: center;
-  background-color: #7CB3B3;
+  background-color: #032A1F;
+}
+h2 {
+  color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  padding-top: 13px;
+  padding-left: 30px;
+  font-size: 20px;
 }
 
-.foot1 {
-  background-color: blue;
+ul {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  border-right: 1px black solid;
+  padding-left: 30px;
+}
+
+li:hover {
+  font-size: 14px;
+  background-color: black;
+  color: white;
+}
+
+.foot1,
+.foot3 {
+  width: 33%;
+  justify-content: center;
+  text-align: left;
 }
 
 .foot2 {
-  background-color: red;
-}
-
-.foot3 {
-  background-color: pink;
+  width: 34%;
+  text-align: left;
 }
 
 /*
