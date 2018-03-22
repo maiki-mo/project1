@@ -138,7 +138,7 @@ hr {
   color: #7CB3B3;
   position: relative;
   left: 70px;
-  bottom: 10px;
+  bottom: 8px;
   animation-name: logo1;
   animation-fill-mode: forwards;
   animation-duration: 6s;
@@ -147,7 +147,7 @@ hr {
 .dee {
   color: #336D5D;
   position: relative;
-  bottom: 10px;
+  bottom: 8px;
   left: -81px;
   animation-name: logo2;
   animation-fill-mode: forwards;
@@ -499,6 +499,8 @@ li:hover {
 }
 
 .foot2 {
+  justify-content: center;
+  text-align: left;
   width: 34%;
 }
 
