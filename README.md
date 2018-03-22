@@ -1,8 +1,8 @@
 # Munder Difflin Project
-Creating a ficitonal Paper Website
+Creating a ficitonal paper company website
 
 ## Must haves
 Needs to be responsive in some manner,
-Use JS events and callbacks,
-Have some sort of animation,
+use JS events and callbacks,
+have some sort of animation,
 and uses HTML/CSS tags properly.
