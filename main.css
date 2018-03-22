@@ -195,7 +195,7 @@ hr {
   left: -7px;
 }
 
-/* modals */
+/* modal ONE */
 
 .modal {
   display: none;
@@ -259,6 +259,159 @@ hr {
 .closeBtn:hover {
   color: black;
 }
+
+.imgContainMod {
+  display: flex;
+}
+.imgContainMod>img {
+  width: 1000px;
+}
+
+/* modal TWO */
+
+.modal2 {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.modalHeader2 {
+  justify-content: center;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #193D40;
+  padding: 5px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  font-size: 30px;
+}
+
+.modalBody2 {
+  padding: 10px 10px;
+  text-align: justify;
+}
+
+.modalFooter2 {
+  font-family: 'IBM Plex Mono', monospace;
+  background: #596D6F;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content2 {
+  background-image: url("images/dust_scratches.png");
+  margin: 20% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.3);
+  animation-name: modalopen;
+  animation-duration: 1s;
+  border-radius: 10px 10px 0 0;
+}
+
+.closeBtn2 {
+  position: relative;
+  top: -9px;
+  height: 30px;
+  width: 30px;
+  color: white;
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.closeBtn2:hover {
+  color: black;
+}
+
+.imgContainMod2 {
+  display: flex;
+}
+.imgContainMod2>img {
+  width: 1000px;
+}
+
+/* modal Three */
+
+.modal3 {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.modalHeader3 {
+  justify-content: center;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  background-color: #193D40;
+  padding: 5px;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  font-size: 30px;
+}
+
+.modalBody3 {
+  padding: 10px 10px;
+  text-align: justify;
+}
+
+.modalFooter3 {
+  font-family: 'IBM Plex Mono', monospace;
+  background: #596D6F;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content3 {
+  background-image: url("images/dust_scratches.png");
+  margin: 20% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.3), 0 7px 20px 0 rgba(0,0,0,0.3);
+  animation-name: modalopen;
+  animation-duration: 1s;
+  border-radius: 10px 10px 0 0;
+}
+
+.closeBtn3 {
+  position: relative;
+  top: -9px;
+  height: 30px;
+  width: 30px;
+  color: white;
+  float: right;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.closeBtn3:hover {
+  color: black;
+}
+
+.imgContainMod3 {
+  display: flex;
+}
+.imgContainMod3>img {
+  width: 1000px;
+}
+
+
 
 /* footer */
 
@@ -343,7 +496,7 @@ p {
   font-size: 50px;
 }
 
-.modalBody>p {
+.modalBody>p, .modalBody2>p, .modalBody3>p {
   font-size: 14px;
 }
 }
