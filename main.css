@@ -50,7 +50,6 @@ hr {
 /* logo */
 #contPop {
   z-index: 1;
-  background-color: blue;
   width: 300px;
   height: 100px;
   display: 
@@ -127,6 +126,32 @@ hr {
   letter-spacing: 4px;
   left: -33px;
   top: -130px;
+}
+
+.em, .dee {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 210px;
+  font-style: bold;
+}
+
+.em {
+  color: #7CB3B3;
+  position: relative;
+  left: 70px;
+  bottom: 10px;
+  animation-name: logo1;
+  animation-fill-mode: forwards;
+  animation-duration: 6s;
+}
+
+.dee {
+  color: #336D5D;
+  position: relative;
+  bottom: 10px;
+  left: -81px;
+  animation-name: logo2;
+  animation-fill-mode: forwards;
+  animation-duration: 7s;
 }
 
 /* about me picture and table */
@@ -433,11 +458,11 @@ hr {
 
 #footCont{
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   bottom: 0;
   right: 0;
   left: 0;
-  height: 300px;
+  height: 400px;
   text-align: center;
   background-color: #032A1F;
 }
@@ -475,9 +500,12 @@ li:hover {
 
 .foot2 {
   width: 34%;
-  text-align: left;
 }
 
+.locRepo {
+  position: relative;
+  top: 37px;
+}
 /*
 
 
@@ -590,4 +618,16 @@ ANIMATION
 @keyframes modalopen {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+@keyframes logo1 {
+  0% {opacity: 0;}
+  75% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes logo2 {
+  0% {opacity: 0;}
+  75% {opacity: 0;}
+  100% {opacity: 1;}
 }
