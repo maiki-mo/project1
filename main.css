@@ -154,11 +154,12 @@ hr {
   animation-duration: 7s;
 }
 
-/* about me picture and table */
+/* about me picture and info */
 
 .picTabContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
   justify-content: space-evenly;
   text-align: center;
 }
@@ -166,13 +167,16 @@ hr {
 .pic>img {
   width: 600px;
   height: 400px;
-  margin: 10px;
 }
 
 .pic>div {
   width: 600px;
   height: 400px;
-  margin: 10px;
+}
+
+.list>h2 {
+  position: relative;
+  bottom: 20px;
 }
 /* icons with events*/
 
@@ -197,9 +201,6 @@ hr {
   width: 150px;
   height: 120px;
   cursor: pointer;
-}
-.content>div:nth-child(1) {
-  border: ;
 }
 
 #prompt {
