@@ -464,7 +464,7 @@ hr {
   left: 0;
   height: 400px;
   text-align: center;
-  background-color: #032A1F;
+  background-color: #7CB3B3;
 }
 h2 {
   color: white;
@@ -592,7 +592,12 @@ p {
   width: 800px;
   height: 510px;
 }
+.pic>div {
+  width: 800px;
+  height: 510px;
 }
+}
+
 /*
 
 
@@ -609,11 +614,11 @@ ANIMATION
 @keyframes assemble2 {
   0% {left: -60px; top: 0px; transform: rotate(0deg);}
   50% {left: 50px; top: -10px; transform: rotate(90deg);}
-  100% {left: -32px; top: -42px; transform: rotate(180deg);}
+  100% {left: -34px; top: -42px; transform: rotate(180deg);}
 }
 
 @keyframes assemble3 {
-  0% {left: -75px; top: 0px; transform: rotate(0deg);}
+  0% {left: -74px; top: 0px; transform: rotate(0deg);}
   100% {left: -122px; top: -30px; transform: rotate(225deg);}
 }
 
