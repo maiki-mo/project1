@@ -172,12 +172,15 @@ hr {
 .pic>div {
   width: 600px;
   height: 400px;
+  position: relative;
+  left: 20px;
 }
 
 .list>h2 {
   position: relative;
   bottom: 20px;
 }
+
 /* icons with events*/
 
 .content {
@@ -192,7 +195,7 @@ hr {
   margin-bottom: 10px;
 }
 
-.content>div {
+.content>aside {
   justify-content: center;
   text-align: center;
   border: 2px #0E3E31 solid;
@@ -220,6 +223,7 @@ hr {
 }
 
 #uniqBox {
+  top: 20px;
   grid-column-start: 1;
   grid-column-end: 4;
   width: 600px;
@@ -541,15 +545,15 @@ MEDIA Q
   grid-template-rows: 1fr 1fr 1fr;
   position: relative;
   grid-gap: 400px;
-  top: 100px;
+  top: 120px;
 }
 
-.content>div {
+.content>aside {
   border: 0;
   width: 300px;
 }
 
-.content>div:hover {
+.content>aside:hover {
   background-color: transparent;
 }
 
