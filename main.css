@@ -176,9 +176,16 @@ hr {
   left: 20px;
 }
 
+.pic>article {
+  width: 600px;
+  height: 400px;
+  padding-right: 20px;
+}
+
 .list>h2 {
   position: relative;
   bottom: 20px;
+  text-align: center;
 }
 
 /* icons with events*/
@@ -195,7 +202,7 @@ hr {
   margin-bottom: 10px;
 }
 
-.content>aside {
+.content>div {
   justify-content: center;
   text-align: center;
   border: 2px #0E3E31 solid;
@@ -548,12 +555,12 @@ MEDIA Q
   top: 120px;
 }
 
-.content>aside {
+.content>div {
   border: 0;
   width: 300px;
 }
 
-.content>aside:hover {
+.content>div:hover {
   background-color: transparent;
 }
 
